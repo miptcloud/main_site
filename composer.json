@@ -1,0 +1,14 @@
+{
+	"name"       :"miptcloud/main_site",
+	"type"       :"project",	
+	"require": {
+		"doorframework/core" : "dev-master",
+		"doorframework/bootstrap" : "dev-master",
+		"doorframework/bspanel" : "dev-master",
+		"phpmailer/phpmailer" : "*",
+		"imagine/imagine": "0.6.*@dev"
+	},
+    "config": {
+        "component-dir": "public/media/components"
+    }
+}
