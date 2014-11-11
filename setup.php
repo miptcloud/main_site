@@ -1,5 +1,12 @@
 <?php
 
+if (!isset($_SERVER['PHP_AUTH_USER']) || $_SERVER['PHP_AUTH_USER'] != 'mipt' || $_SERVER['PHP_AUTH_PW'] != 'dev') {
+    header('WWW-Authenticate: Basic realm="My Realm"');
+    header('HTTP/1.0 401 Unauthorized');
+    echo 'bad password';
+    exit;
+}
+
 date_default_timezone_set("Europe/Moscow");
 
 /**
