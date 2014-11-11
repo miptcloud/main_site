@@ -10,9 +10,11 @@ date_default_timezone_set("Europe/Moscow");
 require_once(__DIR__."/vendor/autoload.php");
 
 //Creating application
-$app = new \Door\Core\Application();
+$app = new App\Application;
 
 \Door\Core\Bootstrap::init($app);
+
+$app->register_library('pages', "/App/Pages");
 
 $app->docroot(__DIR__."/public");
 $app->modpath(__DIR__."/modules");
@@ -29,9 +31,22 @@ $app->database->set_connection(array(
 	'password' => null	
 ));
 
-$app->router->add("index","","/App/Controller/Page");
+
 
 //Application execution
+$path_info = \Door\Core\Helper\Arr::get($_SERVER,'PATH_INFO', "");
+
+if(strpos($path_info, "admin") === 0)
+{
+	require __DIR__."/setup_admin.php";
+}
+else
+{
+	$app->router->add("page","<path>","/App/Controller/Page", array(
+		'path' => '.*'
+	));
+}
+
 echo $app->request(\Door\Core\Helper\Arr::get($_SERVER,'PATH_INFO', ""))
 		->execute()
 		->response()
