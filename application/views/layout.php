@@ -49,12 +49,23 @@
         <div class="footer">
             <div class="container">
                 <div class="row">
-                    <!-- About -->
+                    <!-- Clients -->
                     <div class="col-md-3 md-margin-bottom-40">
-                        <p>About Unify dolor sit amet, consectetur adipiscing elit. Maecenas eget nisl id libero tincidunt sodales.</p>
-                        <p>Duis eleifend fermentum ante ut aliquam. Cras mi risus, dignissim sed adipiscing ut, placerat non arcu.</p>    
-                    </div><!--/col-md-3-->
-                    <!-- End About -->
+                        <div class="posts">
+                            <div class="headline"><h2>Наши клиенты</h2></div>
+                            <ul class="list-unstyled latest-list">
+                                <li>
+                                    <a href="https://rt.ru/" target="_blank"><img width="75px" src="http://perenos-nomera.ru/wp-content/uploads/2014/01/rostelecom.jpg"</img></a>
+                                    <small>Телекоммуникационные услуги для пользователей всех уровней</small>
+                                </li>
+                                <li>
+                                    <a href="http://rostec.ru/" target="_blank"><img width="75px" src="http://toplogos.ru/images/thumbs/preview-logo-rostec.jpg"</img></a>
+                                    <small>Содействие разработке и производству высокотехнологичной промышленной продукции</small>
+                                </li>
+                            </ul>
+                        </div>						
+                    </div><!--/col-md-3-->  
+                    <!-- Clients -->
 
                     <!-- Latest -->
                     <div class="col-md-3 md-margin-bottom-40">
@@ -74,9 +85,7 @@
                                     <small>11 ноября 2014</small>
                                 </li>
                             </ul>
-                        </div>
-						
-						
+                        </div>						
                     </div><!--/col-md-3-->  
                     <!-- End Latest --> 
                     
@@ -103,8 +112,7 @@
                         <address class="md-margin-bottom-40">
                         141700, Московская облаcть,<br>
                         г. Долгопрудный, Институтский пер., д.9.<br>
-                        Телефон: +7 495 XXX XXX XXXX <br>
-                        Факс: +7 495 XXX XXX XXXX <br>
+                        Телефон: +7 495 408 7881 (доб. 6234) <br>
                         E-mail: <a href="mailto:info@onlineelectronics.ru" class="">info@onlineelectronics.ru</a>
                         </address>
                     </div><!--/col-md-3-->

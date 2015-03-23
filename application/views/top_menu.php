@@ -25,11 +25,12 @@
 
                         <!-- Pages -->                        
 						<li class="dropdown">
-							<a href="/blog">Блог</a>
+							<a href="/blog">События</a>
 							<ul class="dropdown-menu">
 								<li><a href="/blog/news">Новости</a></li>
 								<li><a href="/blog/articles">Статьи</a></li>
 								<li><a href="/blog/seminars">Семинары</a></li>
+								<li><a href="/blog/forum">Форум</a></li>
 								<li><a href="/blog/video">Видео</a></li>
 								<li><a href="/blog/press">СМИ о нас</a></li>
 							</ul>                                
